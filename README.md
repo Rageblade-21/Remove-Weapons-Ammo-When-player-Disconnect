@@ -1,15 +1,15 @@
 
-FiveM Weapon Adder Script
+FiveM Weapon Removal Script
 Description
 
-This script adds a specified weapon to a player's inventory in a FiveM server running on the qb-core framework when using the FivePD and vMenu resources. It ensures that players receive the weapon seamlessly during gameplay.
+This script removes all weapons and ammo from a player's inventory in a FiveM server running on the qb-core framework when the player disconnects. It is compatible with servers using FivePD and vMenu resources, ensuring a clean slate for players upon rejoining.
 
 Features
 
-1.  Automatically adds a specified weapon to a player's inventory.
-2.  Compatible with qb-core framework.
-3.  Works alongside FivePD and vMenu.
-4.  Configurable weapon types.
+1. Automatically removes all weapons and ammo from a player's inventory upon disconnecting.
+2. Compatible with qb-core framework.
+3. Works alongside FivePD and vMenu.
+4. Ensures players have no residual weapons or ammo when rejoining.
 
 
 Requirements
@@ -28,7 +28,7 @@ Installation
 
 1. Download the Script:
 Clone or download this repository to your local machine:
-git clone https://github.com/Rageblade-21/Move-Weapons-To-QB-Inventory-
+https://github.com/Rageblade-21/Remove-Weapons-Ammo-When-player-Disconnect
 
 2. Add to Resources Folder:
 Place the script folder into your FiveM server's resources directory.
@@ -37,7 +37,7 @@ Place the script folder into your FiveM server's resources directory.
 Add the script to your server's server.cfg file to ensure it starts up with the server.
 
 4. Usage
-The script runs automatically once installed and configured. When a player joins the server or a specific event is triggered, the specified weapon(s) will be added to their inventory.
+The script runs automatically once installed. When a player disconnects from the server, all their weapons and ammo will be removed from their inventory.
 
 Troubleshooting
 
